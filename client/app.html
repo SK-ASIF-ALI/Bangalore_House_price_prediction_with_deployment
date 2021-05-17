@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Banglore Home Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+</head>
+<body>
+<div class="img"></div>
+
+
+
+<div class="wrapper" >
+<div style=" background: rgb(102,0,255);
+background: linear-gradient(90deg, rgba(102,0,255,0.5242471988795518) 0%, rgba(106,0,255,0.4009978991596639) 51%, rgba(0,212,255,1) 100%);">
+<form class="form">
+	<h4>Area in Square Feet</h4>
+    <input class="area"  type="text" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
+	<h4 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;">BHK</h4>
+	<div class="switch-field">
+		<input type="radio" id="radio-bhk-1" name="uiBHK" value="1"/>
+		<label for="radio-bhk-1">1</label>
+		<input type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked/>
+		<label for="radio-bhk-2">2</label>
+		<input type="radio" id="radio-bhk-3" name="uiBHK" value="3"/>
+		<label for="radio-bhk-3">3</label>
+		<input type="radio" id="radio-bhk-4" name="uiBHK" value="4"/>
+		<label for="radio-bhk-4">4</label>
+		<input type="radio" id="radio-bhk-5" name="uiBHK" value="5"/>
+		<label for="radio-bhk-5">5</label>
+	</div>
+	</form>
+<form class="form">
+	<h4>Bathroom</h4>
+	<div class="switch-field">
+		<input type="radio" id="radio-bath-1" name="uiBathrooms" value="1"/>
+		<label for="radio-bath-1">1</label>
+		<input type="radio" id="radio-bath-2" name="uiBathrooms" value="2" checked/>
+		<label for="radio-bath-2">2</label>
+		<input type="radio" id="radio-bath-3" name="uiBathrooms" value="3"/>
+		<label for="radio-bath-3">3</label>
+		<input type="radio" id="radio-bath-4" name="uiBathrooms" value="4"/>
+		<label for="radio-bath-4">4</label>
+		<input type="radio" id="radio-bath-5" name="uiBathrooms" value="5"/>
+		<label for="radio-bath-5">5</label>
+	</div>
+		<h4>Location</h4>
+	<div>
+  <select class="location alert-light" name="" id="uiLocations">
+    <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+		<option>Electronic City</option>
+        <option>Rajaji Nagar</option>
+  </select>
+</div>
+	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+
+</div>
+<div style=" background: rgb(102,0,255);
+background: linear-gradient(90deg, rgba(102,0,255,0.5242471988795518) 0%, rgba(106,0,255,0.4009978991596639) 51%, rgba(0,212,255,1) 100%);">
+
+
+<h3 style="font-family: Georgia, 'Times New Roman', Times, serif;">Steps To find your Dream Home</h3>
+<br>
+<div class="div" ></div>
+<br>
+<ul id="list">
+<li>Choose the Area in Square Feet</li>
+<br>
+<li>Choose the Value for BHK</li>
+<br>
+<li>Choose the no of bathrooms</li>
+<br>
+<li>Choose the Location</li>
+<br>
+<li>Then click on Estimate price Button</li>
+
+
+
+
+
+
+</ul>
+
+
+
+</div>
+<div style=" background: rgb(102,0,255);
+background: linear-gradient(90deg, rgba(102,0,255,0.5242471988795518) 0%, rgba(106,0,255,0.4009978991596639) 51%, rgba(0,212,255,1) 100%);">
+	
+<font style="font-size:30px;font-weight: bold;color:white;">Welcome To GHAR-DEKHO</font>
+<hr>
+<br>
+<h3 align="center" style="font-family: Verdana, Geneva, Tahoma, sans-serif;color:white">You need your Dream Home  <span>&#33;</span>
+	<br> <br> Come to Us.<br> <br> we are here <br> <br> to make it <br> <br> Happen <span>&#161;</span> <span>&#161;</span>
+
+</h3>
+
+
+</div>
+
+</div>
+</body>
+</html>
